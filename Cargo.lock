@@ -452,12 +452,6 @@ dependencies = [
 
 [[package]]
 name = "base64"
-version = "0.12.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3441f0f7b02788e948e47f457ca01f1d7e6d92c693bc132c22b087d3141c03ff"
-
-[[package]]
-name = "base64"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
@@ -810,12 +804,6 @@ dependencies = [
  "byteorder",
  "iovec",
 ]
-
-[[package]]
-name = "bytes"
-version = "0.5.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e4cec68f03f32e44924783795810fa50a7035d8c8ebe78580ad7e6c703fba38"
 
 [[package]]
 name = "bytes"
@@ -3422,7 +3410,7 @@ dependencies = [
  "jsonrpsee-types 0.8.0",
  "pin-project 1.0.10",
  "rustls-native-certs 0.6.1",
- "soketto 0.7.1",
+ "soketto",
  "thiserror",
  "tokio",
  "tokio-rustls 0.23.2",
@@ -3448,7 +3436,7 @@ dependencies = [
  "rustc-hash",
  "serde",
  "serde_json",
- "soketto 0.7.1",
+ "soketto",
  "thiserror",
  "tokio",
  "tracing",
@@ -3481,7 +3469,7 @@ dependencies = [
  "log 0.4.14",
  "serde",
  "serde_json",
- "soketto 0.7.1",
+ "soketto",
  "thiserror",
 ]
 
@@ -3527,7 +3515,7 @@ dependencies = [
  "rustls-native-certs 0.5.0",
  "serde",
  "serde_json",
- "soketto 0.7.1",
+ "soketto",
  "thiserror",
  "tokio",
  "tokio-rustls 0.22.0",
@@ -4164,7 +4152,7 @@ dependencies = [
  "log 0.4.14",
  "quicksink",
  "rw-stream-sink",
- "soketto 0.7.1",
+ "soketto",
  "url 2.2.1",
  "webpki-roots 0.21.0",
 ]
@@ -4887,7 +4875,7 @@ dependencies = [
  "sc-transaction-pool-api",
  "serde",
  "serde_json",
- "soketto 0.4.2",
+ "soketto",
  "sp-api",
  "sp-authority-discovery",
  "sp-authorship",
@@ -9633,21 +9621,6 @@ dependencies = [
 
 [[package]]
 name = "soketto"
-version = "0.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5c71ed3d54db0a699f4948e1bb3e45b450fa31fe602621dee6680361d569c88"
-dependencies = [
- "base64 0.12.3",
- "bytes 0.5.6",
- "futures 0.3.19",
- "httparse",
- "log 0.4.14",
- "rand 0.7.3",
- "sha-1 0.9.4",
-]
-
-[[package]]
-name = "soketto"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "41d1c5305e39e09653383c2c7244f2f78b3bcae37cf50c64cb4789c9f5096ec2"
@@ -11471,7 +11444,7 @@ version = "1.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ee73e6e4924fe940354b8d4d98cad5231175d615cd855b758adc658c0aac6a0"
 dependencies = [
- "cfg-if 1.0.0",
+ "cfg-if 0.1.10",
  "digest 0.10.3",
  "rand 0.8.4",
  "static_assertions",
